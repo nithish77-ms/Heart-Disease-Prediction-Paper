@@ -1,0 +1,32 @@
+.field-guidance{display:grid;gap:8px;margin-top:10px;padding:11px 12px;border:1px solid #e6edf1;border-radius:9px;background:#f8fafc;font-size:11px;font-weight:400;line-height:1.5;color:#68778b}
+.guidance-row{display:grid;grid-template-columns:105px minmax(0,1fr);gap:8px;align-items:start}
+.guidance-label{color:#7d8a9a;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.guidance-value{color:#34465b;font-size:11px;font-weight:600}
+.guidance-note{padding-top:7px;border-top:1px solid #e6edf1}
+.field-guidance a{width:max-content;max-width:100%;color:#087e8b;font-size:11px;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.field-guidance a:focus-visible{outline:2px solid #087e8b;outline-offset:2px}
+.patient-result{padding:17px 19px;border:1px solid #cce9e4;border-radius:12px;background:#f1faf8;color:#193e49;font-size:16px;font-weight:700;line-height:1.55}
+.patient-result small{display:block;margin-top:8px;color:#617588;font-size:11px;font-weight:400;line-height:1.6}
+.factor-list{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.factor-item{padding:15px;border:1px solid #e7edf3;border-radius:11px;background:#fbfcfe}
+.factor-item b{display:block;margin-bottom:5px;color:#24384d;font-size:13px}
+.factor-item p{margin:0;color:#65748a;font-size:12px;line-height:1.65}
+.factor-direction{display:inline-block;margin-top:8px;color:#087e8b;font-size:11px;font-weight:700}
+.output-history{display:grid;gap:10px}
+.output-history-item{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #edf1f5}
+.output-history-item:last-child{border-bottom:0}
+.output-history-item b{font-size:12px;line-height:1.5}
+.output-history-item small{flex-shrink:0;color:#8996a6;font-size:10px}
+.assessment-panel .form-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:22px 24px;margin:20px 0 28px}
+.assessment-panel .field{align-self:stretch;gap:10px;padding:18px;border:1px solid #e2eaf0;border-radius:12px;background:#fff;box-shadow:0 3px 12px #19365008}
+.assessment-panel .field>span:first-child{font-size:12px;line-height:1.45;color:#33475c}
+.assessment-panel .field input,.assessment-panel .field select{height:46px;font-size:13px}
+.assessment-panel .field-guidance{flex:1;align-content:start;gap:12px;margin-top:2px;padding:14px;border-color:#e2eaf0;background:#f7fafc;font-size:12px;line-height:1.65}
+.assessment-panel .guidance-row{grid-template-columns:120px minmax(0,1fr);gap:12px;padding-bottom:10px;border-bottom:1px solid #e5ebf0}
+.assessment-panel .guidance-label{padding-top:1px;font-size:10px}
+.assessment-panel .guidance-value{font-size:12px;line-height:1.6}
+.assessment-panel .guidance-note{padding-top:2px;border:0;font-size:11px;line-height:1.6}
+.assessment-panel .field-guidance a{line-height:1.55}
+@media(max-width:600px){.output-history-item{display:grid;gap:4px}}
+@media(max-width:700px){.assessment-panel .form-grid{grid-template-columns:minmax(0,1fr);gap:16px}.assessment-panel .field{padding:15px}.assessment-panel .guidance-row{grid-template-columns:105px minmax(0,1fr);gap:9px}}
+@media(max-width:420px){.guidance-row,.assessment-panel .guidance-row{grid-template-columns:1fr;gap:3px}.assessment-panel .guidance-row{padding-bottom:9px}}
